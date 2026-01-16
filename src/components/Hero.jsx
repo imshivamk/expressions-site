@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [date, setDate] = useState(new Date(1770458400000 - Date.now()));
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDate(new Date(1770458400000 - Date.now()));
+    }, 1000);
+  }, []);
+
   return (
     <section
       id="home"
@@ -9,7 +17,7 @@ const Hero = () => {
       pt-6 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 overflow-hidden"
     >
       <div className="flex-shrink-0 flex items-center">
-        <div className="w-32 h-10 bg-red-500 rounded flex items-center justify-center text-white text-xs font-bold">
+        <div className="w-40 h-16 bg-red-500 rounded flex items-center justify-center text-white text-3xl font-bold">
           LOGO
         </div>
       </div>
@@ -22,7 +30,7 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-          EXPRESSIONS <span className="text-blue-400">2025</span>
+          XPRESSIONS <span className="text-blue-400">2026</span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-indigo-100 mb-8 font-light">
           Get Ready for the Most Immersive Techno-Cultural Fest. Innovation
@@ -39,17 +47,43 @@ const Hero = () => {
         </div>
 
         {/* Countdown Grid - Compact */}
+        {/* {console.log(Date.now())}
         <div className="grid grid-cols-4 gap-2 max-w-lg mx-auto border border-white/10 bg-white/5 backdrop-blur-sm rounded-xl p-4">
           {["Days", "Hours", "Mins", "Secs"].map((label, idx) => (
+
             <div key={idx} className="text-center">
+
               <span className="block text-2xl md:text-3xl font-bold font-mono">
-                00
+                
               </span>
+
+
               <span className="text-[10px] md:text-xs uppercase tracking-wider text-indigo-200">
                 {label}
               </span>
+
             </div>
           ))}
+        </div> */}
+
+        <div className="grid grid-cols-4 gap-2 max-w-lg mx-auto border border-white/10 bg-white/5 backdrop-blur-sm rounded-xl p-4">
+          <div className="flex flex-col justify-center items-center">
+            <span className="text-2xl">{date.getDate()}</span>
+            <span className="font-semibold text-xl">Days</span>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <span className="text-2xl">{date.getHours()}</span>
+            <span className="font-semibold text-xl">Hours</span>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <span className="text-2xl">{date.getMinutes()}</span>
+            <span className="font-semibold text-xl">Minutes</span>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <span className="text-2xl">{date.getSeconds()}</span>
+            <span className="font-semibold text-xl">Seconds</span>
+          </div>
+          
         </div>
       </div>
     </section>

@@ -35,10 +35,10 @@ const About = () => {
               The Heart of <br className="hidden md:block"/> Innovation & Culture
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-              Persona Fest is the flagship techno-cultural event of MIT ADT University. It is a vibrant celebration where creativity meets technology, bringing together thousands of students, esteemed faculty, and industry leaders.
+              EXPRESSIONSFest is the flagship techno-cultural event of MIT ADT University. It is a vibrant celebration where creativity meets technology, bringing together thousands of students, esteemed faculty, and industry leaders.
             </p>
             <p className="text-gray-600 leading-relaxed text-lg mb-8">
-              Beyond just an event, it's an experience. From electrifying live concerts and high-stakes technical hackathons to thought-provoking workshops and mesmerizing art installations, Persona 2025 promises a weekend that defies expectations.
+              Beyond just an event, it's an experience. From electrifying live concerts and high-stakes technical hackathons to thought-provoking workshops and mesmerizing art installations, EXPRESSIONS 2026 promises a weekend that defies expectations.
             </p>
             <button className="bg-indigo-50 text-indigo-700 font-semibold py-3 px-8 rounded-xl hover:bg-indigo-100 transition-colors duration-300 flex items-center gap-2 group">
               Learn More About Us

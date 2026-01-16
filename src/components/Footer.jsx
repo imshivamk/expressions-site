@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-1">
-            <h4 className="text-white font-bold text-lg mb-4">About Persona</h4>
+            <h4 className="text-white font-bold text-lg mb-4">About EXPRESSIONS</h4>
             <p className="text-sm leading-relaxed text-slate-400">
-              The most awaited techno-cultural event organized by MIT-ADT University. Join us for innovation and fun.
+              The most awaited techno-cultural event organized by IMED, Pune. Join us for innovation and fun.
             </p>
           </div>
           
@@ -25,7 +25,7 @@ const Footer = () => {
             <h4 className="text-white font-bold text-lg mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>Pune, Maharashtra</li>
-              <li>info@mituniversity.edu.in</li>
+              <li>info@imedbvdu.edu.in</li>
               <li>+91 123 456 7890</li>
             </ul>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
-          <p>© 2025 PERSONA FEST - MIT-ADT University. All rights reserved.</p>
+          <p>© 2025 EXPRESSIONS FEST - IMED, Pune. All rights reserved.</p>
         </div>
       </div>
     </footer>
