@@ -17,7 +17,7 @@ const Hero = () => {
       pt-6 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 overflow-hidden"
     >
       <div className="flex-shrink-0 flex items-center">
-        <div className="w-40 h-16 bg-red-500 rounded flex items-center justify-center text-white text-3xl font-bold">
+        <div className="w-40 h-16 bg-red-400 rounded flex items-center justify-center text-white text-3xl font-bold">
           LOGO
         </div>
       </div>
@@ -30,7 +30,7 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-          XPRESSIONS <span className="text-blue-400">2026</span>
+          <span className="text-8xl">X</span>PRESSIONS <span className="text-blue-500">2026</span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-indigo-100 mb-8 font-light">
           Get Ready for the Most Immersive Techno-Cultural Fest. Innovation
@@ -42,7 +42,7 @@ const Hero = () => {
             Register Now
           </button>
           <button className="border-2 border-white/30 backdrop-blur-sm text-white font-semibold py-3 px-8 rounded-full hover:bg-white/10 transition">
-            View Schedule
+            View Rulebook
           </button>
         </div>
 
