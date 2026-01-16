@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Marquee Animation - Slowed down for larger images */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Changed 20s to 40s for smoother, slower scroll */
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+/* Utility to hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
