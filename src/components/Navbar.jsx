@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,16 +9,19 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <div className="w-52 h-full 0 rounded flex items-center justify-center text-white text-xs font-bold">
-              <img src="./bvdu.webp" alt="" />
-            </div>
+            <a href="https://www.bvuniversity.edu.in/">
+              <div className="w-52 h-full 0 rounded flex items-center justify-center text-white text-xs font-bold">
+                <img src="./bvdu.webp" alt="" />
+              </div>
+            </a>
           </div>
 
-
           <div className="flex-shrink-0 flex items-center">
-            <div className="w-28 h-full 0 rounded flex items-center justify-center text-white text-xs font-bold">
-              <img src="./imed_logo.jpg" alt="" />
-            </div>
+            <a href="https://www.bvuniversity.edu.in/imed/">
+              <div className="w-28 h-full 0 rounded flex items-center justify-center text-white text-xs font-bold">
+                <img src="./imed_logo.jpg" alt="" />
+              </div>
+            </a>
           </div>
 
           {/* Desktop Menu */}
@@ -49,24 +52,28 @@ const Navbar = () => {
             </button>
           </div> */}
         </div>
-
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 absolute w-full">
           <div className="px-4 pt-2 pb-6 space-y-2 shadow-xl">
-            {['Home', 'About', 'Schedule', 'Committee', 'Sponsorship'].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
-            <a href="#register" className="block w-full text-center mt-4 bg-indigo-600 text-white px-4 py-3 rounded-lg font-bold shadow-md">
+            {["Home", "About", "Schedule", "Committee", "Sponsorship"].map(
+              (item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item}
+                </a>
+              ),
+            )}
+            <a
+              href="#register"
+              className="block w-full text-center mt-4 bg-indigo-600 text-white px-4 py-3 rounded-lg font-bold shadow-md"
+            >
               Register Now
             </a>
           </div>

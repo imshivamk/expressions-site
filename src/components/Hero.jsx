@@ -30,10 +30,10 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <h1 className="text-5xl font-bold md:text-6xl font-extrabold tracking-tight mb-4">
-          <span className="text-9xl">X</span>PRESSIONS <span className="text-blue-500">2026</span>
+          <span className="text-9xl">X</span>PRESSIONS <span className="bg-linear-to-r from-white to-violet-600 bg-clip-text text-transparent">2026</span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl 
-        text-indigo-100 mb-8 font-semibold">
+        text-white shadow-inner mb-8 font-semibold">
           Get Ready for the Most Immersive Techno-Cultural Fest. Innovation
           meets creativity.
         </p>

@@ -6,12 +6,13 @@ import img1 from "../assets/photos/img1.jpeg";
 import img2 from "../assets/photos/img2.jpeg";
 import img3 from "../assets/photos/img3.jpeg";
 import img4 from "../assets/photos/img4.jpeg";
-
+import xicon from "../assets/x.svg";
 
 // 2. Import Swiper styles (these are necessary for it to work)
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+import { FacebookIcon, Instagram, Linkedin, LucideYoutube, TwitterIcon, X, XIcon, Youtube, YoutubeIcon } from 'lucide-react';
 
 // Custom styles for the pagination dots to match our theme (optional tweak)
 const paginationStyles = `
@@ -45,11 +46,40 @@ const About = () => {
             <p className="text-gray-600 leading-relaxed text-lg mb-8">
               Beyond just an event, it's an experience. From electrifying live concerts and high-stakes technical hackathons to thought-provoking workshops and mesmerizing art installations, EXPRESSIONS 2026 promises a weekend that defies expectations.
             </p>
+            
             <button className="bg-indigo-50 text-indigo-700 font-semibold py-3 px-8 rounded-xl hover:bg-indigo-100 transition-colors duration-300 flex items-center gap-2 group">
               Learn More About Us
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </button>
           </div>
+
+          <div className="flex flex-col gap-4 font-sans bg-indigo-50 text-purple-500 font-semibold py-3 px-8 rounded-xl hover:bg-indigo-100 transition-colors duration-300 flex items-center gap-2 group">
+              <h1 className='text-2xl'>Don't Forget to follow us</h1>
+              <div className="flex gap-6">
+                <a className='rounded-full p-2 text-pink-600 bg-white hover:bg-gray-500/40 ' href="https://www.instagram.com/imed_pune_official?igsh=OXdlaHI5eTQwYmhi">
+                  <Instagram size={44} />
+              </a>
+               <a className='rounded-full p-2 text-blue-700 bg-white hover:bg-gray-500/40 ' 
+               href="https://www.linkedin.com/school/bharatividyapeeth">
+                  <Linkedin size={44} />
+              </a>
+               <a className='rounded-full p-2 bg-white hover:bg-gray-500/40 ' 
+               href="https://twitter.com/bharati_vp?lang=en">
+                  <img src={xicon} height={44} width={44} alt="" />
+              </a>
+               <a className='rounded-full text-red-600 p-2 bg-white hover:bg-gray-500/40 ' 
+               href="https://www.youtube.com/user/bharatividyapeethuni">
+                  <YoutubeIcon size={44} />
+              </a>
+              <a className='rounded-full text-blue-500 p-2 bg-white hover:bg-gray-500/40 ' 
+               href="https://www.facebook.com/bharati.vidyapeeth">
+                  <FacebookIcon size={44} />
+              </a>
+              </div>
+
+              
+              
+            </div>
           
           {/* Right Column: Image Carousel */}
           <div className="order-1 lg:order-2 relative z-10">
