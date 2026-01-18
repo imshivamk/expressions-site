@@ -1,84 +1,55 @@
 import React, { useState } from "react";
+import bvdu from "./bvdu.jpeg";
+// Assuming imed_logo is in your public folder or imported
+// import imed_logo from "./imed_logo.jpg"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed w-full z-50 top-0 bg-white backdrop-blur-md shadow-sm border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        
+        <div className="flex justify-between items-center py-2 md:py-4">
+          
           <div className="flex-shrink-0 flex items-center">
             <a href="https://www.bvuniversity.edu.in/">
-              <div className="w-52 h-full 0 rounded flex items-center justify-center text-white text-xs font-bold">
-                <img src="./bvdu.webp" alt="" />
-              </div>
+              {/* Responsive logo size: h-12 mobile, h-20 desktop */}
+              <img 
+                src={bvdu} 
+                alt="BVDU Logo" 
+                className="h-14 w-14 md:h-20 md:w-20 object-contain" 
+              />
             </a>
           </div>
 
+          {/* Center Text - Responsive Sizing */}
+          <div className="flex flex-col items-center text-center px-2">
+            <h2 className="font-bold text-[10px] xs:text-xs sm:text-sm md:text-base leading-tight text-gray-900">
+              BHARATI VIDYAPEETH <span className="hidden xs:inline">(Deemed to be University)</span>
+            </h2>
+            <h2 className="font-bold text-[9px] xs:text-[10px] sm:text-xs md:text-sm text-gray-800 mt-0.5 md:mt-1 leading-tight">
+              INSTITUTE OF MANAGEMENT AND ENTREPRENEURSHIP DEVELOPMENT, PUNE
+            </h2>
+            <p className="text-[8px] xs:text-[9px] sm:text-[10px] md:text-xs text-gray-600 mt-0.5 md:mt-1 font-medium">
+              NAAC A++ | NIRF 59th Rank | Category-I University
+            </p>
+          </div>
+
+          {/* Right Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="https://www.bvuniversity.edu.in/imed/">
-              <div className="w-28 h-full 0 rounded flex items-center justify-center text-white text-xs font-bold">
-                <img src="./imed_logo.jpg" alt="" />
-              </div>
+              {/* Responsive logo size */}
+              <img 
+                src="./imed_logo.jpg" 
+                alt="IMED Logo" 
+                className="h-10 w-auto md:h-16 object-contain" 
+              />
             </a>
           </div>
 
-          {/* Desktop Menu */}
-          {/* <div className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Schedule', 'Committee', 'Sponsorship'].map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`} className="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-200">
-                {item}
-              </a>
-            ))}
-            <a href="#register" className="bg-indigo-600 text-white px-4 py-2 rounded-full font-medium hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg">
-              Register
-            </a>
-          </div> */}
-
-          {/* Hamburger Button */}
-          {/* <div className="flex items-center md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-indigo-600 focus:outline-none"
-            >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div> */}
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 absolute w-full">
-          <div className="px-4 pt-2 pb-6 space-y-2 shadow-xl">
-            {["Home", "About", "Schedule", "Committee", "Sponsorship"].map(
-              (item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item}
-                </a>
-              ),
-            )}
-            <a
-              href="#register"
-              className="block w-full text-center mt-4 bg-indigo-600 text-white px-4 py-3 rounded-lg font-bold shadow-md"
-            >
-              Register Now
-            </a>
-          </div>
-        </div>
-      )}
     </nav>
   );
 };
