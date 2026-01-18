@@ -84,12 +84,12 @@ const About = () => {
             </button>
           </div>
 
-          <div className="flex flex-col gap-4 font-sans bg-indigo-50 text-purple-500 font-semibold py-3 px-8 rounded-xl hover:bg-indigo-100 transition-colors duration-300 flex items-center gap-2 group">
+          <div className="flex gap-4 font-sans bg-indigo-50 text-purple-500 font-semibold py-3 px-8 rounded-xl hover:bg-indigo-100 transition-colors duration-300 flex items-center gap-2 group">
             <a
               href="https://www.bvuniversity.edu.in/imed/"
-              className="text-2xl hover:text-violet-800 cursor-pointer font-semibold text-blue-600"
+              className="text-md hover:text-violet-800 cursor-pointer font-semibold text-black"
             >
-              Visit our official website <span className="text-blue-700">Here</span>
+              To Visit our official website <span className="text-blue-700">Click Here</span>
             </a>
           </div>
 
