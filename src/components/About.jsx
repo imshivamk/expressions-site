@@ -35,7 +35,7 @@ const About = () => {
               The Heart of <br className="hidden md:block"/> Innovation & Culture
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-              EXPRESSIONSFest is the flagship techno-cultural event of MIT ADT University. It is a vibrant celebration where creativity meets technology, bringing together thousands of students, esteemed faculty, and industry leaders.
+              EXPRESSIONS is the flagship techno-cultural event of IMED. It is a vibrant celebration where creativity meets technology, bringing together thousands of students, esteemed faculty, and industry leaders.
             </p>
             <p className="text-gray-600 leading-relaxed text-lg mb-8">
               Beyond just an event, it's an experience. From electrifying live concerts and high-stakes technical hackathons to thought-provoking workshops and mesmerizing art installations, EXPRESSIONS 2026 promises a weekend that defies expectations.

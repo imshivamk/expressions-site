@@ -1,0 +1,246 @@
+{
+  "events": [
+    {
+      "id": "vyapar-vistar",
+      "name": "Vyapar Vistar",
+      "tagline": "Business Plan Competition",
+      "schedule": ["Day 1"],
+      "dates": ["06/02/26"],
+      "category": "Business",
+      "participation": "Solo or Team (max 4)",
+      "fee": "₹100 (Solo) / ₹300 (Group)",
+      "coordinators": [
+        { "name": "Rutuja Herekar", "contact": "8618400768" },
+        { "name": "Diya Jagzap", "contact": "9423179769" },
+        { "name": "Anjali Kumari", "contact": "9508808902" }
+      ],
+      "rounds": [
+        { "name": "Round 1: Give Wings to your Ideas", "details": "Submit Word doc (800-1000 words) via email by Feb 2, 2026." },
+        { "name": "Round 2: Business Plan", "details": "10 min PPT presentation on event day." }
+      ],
+      "rules": ["English language only", "No AI tools allowed", "Bring soft copy in pendrive"]
+    },
+    {
+      "id": "valorant",
+      "name": "Valorant",
+      "tagline": "Gaming Tournament",
+      "schedule": ["Day 1"],
+      "dates": ["06/02/26"],
+      "category": "E-Sports",
+      "participation": "Team (2v2)",
+      "fee": "Check Registration",
+      "coordinators": [
+        { "name": "Gourabh Ghadge", "contact": "8017250312" },
+        { "name": "Mohit Pokar", "contact": "9325044535" },
+        { "name": "Rishap Kumar", "contact": "8340609440" }
+      ],
+      "rules": ["One account per player", "Bring Your Own Device (Laptop)", "Maps decided by organizers", "Cheating = Disqualification"]
+    },
+    {
+      "id": "debate",
+      "name": "Debate",
+      "tagline": "War of Words",
+      "schedule": ["Day 1"],
+      "dates": ["06/02/26"],
+      "category": "Literary",
+      "participation": "Individual",
+      "fee": "₹100",
+      "coordinators": [
+        { "name": "Siddhi Burlawar", "contact": "7066330513" },
+        { "name": "Bhushan Sonawane", "contact": "8424955143" },
+        { "name": "Raiha Imam", "contact": "9801023449" }
+      ],
+      "rules": ["Topics given on spot", "3 min argument + 1 min rebuttal", "No mobile phones/notes", "Topics differ for UG/PG"]
+    },
+    {
+      "id": "treasure-hunt",
+      "name": "Treasure Hunt",
+      "tagline": "Hunt for Glory",
+      "schedule": ["Day 1"],
+      "dates": ["06/02/26"],
+      "category": "Strategy",
+      "participation": "Team (2-5 members)",
+      "fee": "₹300",
+      "coordinators": [
+        { "name": "Aroma Parry", "contact": "90228081114" },
+        { "name": "Shraddha Pawar", "contact": "8788890054" },
+        { "name": "Rudra Sambahare", "contact": "9146268182" }
+      ],
+      "rules": ["Do not damage clues", "No running/pushing", "No phones allowed", "Time limit strict"]
+    },
+    {
+      "id": "reelwali-relay",
+      "name": "Reelwali Relay",
+      "tagline": "Reel Making",
+      "schedule": ["Day 1", "Day 2", "Day 3"],
+      "dates": ["06/02/26", "07/02/26", "08/02/26"],
+      "category": "Creative",
+      "participation": "Individual",
+      "fee": "₹100",
+      "coordinators": [
+        { "name": "Lakshay Bhardwaj", "contact": "7495084335" },
+        { "name": "Vaishnavi", "contact": "9657665440" },
+        { "name": "Mayuri", "contact": "8208253362" }
+      ],
+      "rules": ["Bring own camera/phone", "Duration 30-60 secs", "Theme given on spot", "Shoot inside campus only"]
+    },
+    {
+      "id": "frames-xpressions",
+      "name": "Frames of Xpressions",
+      "tagline": "Photography",
+      "schedule": ["Day 1", "Day 2", "Day 3"],
+      "dates": ["06/02/26", "07/02/26", "08/02/26"],
+      "category": "Creative",
+      "participation": "Individual",
+      "fee": "₹100",
+      "coordinators": [
+        { "name": "Siddharth Mehta", "contact": "9373634536" },
+        { "name": "Kalyani Patil", "contact": "9004557118" },
+        { "name": "Pournima", "contact": "9822578390" }
+      ],
+      "rules": ["Submit 15-20 photos", "No editing/color correction", "Original work only", "Bring own equipment"]
+    },
+    {
+      "id": "trade-smart",
+      "name": "Trade Smart",
+      "tagline": "Virtual Trading",
+      "schedule": ["Day 1", "Day 2", "Day 3"],
+      "dates": ["06/02/26", "07/02/26", "08/02/26"],
+      "category": "Finance",
+      "participation": "Solo or Team of 2",
+      "fee": "₹100",
+      "coordinators": [
+        { "name": "Narayane", "contact": "9309290389" },
+        { "name": "TanuShree", "contact": "6299500822" },
+        { "name": "Shivam Sharma", "contact": "8104892668" }
+      ],
+      "rules": ["Equity shares only", "Intraday trading only", "Virtual capital ₹10L", "Submit investment report"]
+    },
+    {
+      "id": "crack-the-code",
+      "name": "Crack The Code",
+      "tagline": "Coding Challenge",
+      "schedule": ["Day 2"],
+      "dates": ["07/02/26"],
+      "category": "Technical",
+      "participation": "Duo (Team of 2)",
+      "fee": "₹300",
+      "coordinators": [
+        { "name": "Arya Kumari", "contact": "9431323151" },
+        { "name": "Chirag", "contact": "9811215248" },
+        { "name": "Aishwarya Ghadge", "contact": "8010222627" }
+      ],
+      "rounds": [
+        { "name": "Round 1", "details": "Objective Test" },
+        { "name": "Round 2", "details": "Coding (C or Java)" }
+      ],
+      "rules": ["Solution must be executable", "No plagiarism"]
+    },
+    {
+      "id": "ad-mad",
+      "name": "Ad-Mad Show",
+      "tagline": "Marketing Drama",
+      "schedule": ["Day 2"],
+      "dates": ["07/02/26"],
+      "category": "Marketing",
+      "participation": "Team (2-5 members)",
+      "fee": "₹300",
+      "coordinators": [
+        { "name": "Sobin", "contact": "9158000030" },
+        { "name": "Aamir Nadaf", "contact": "8956278104" }
+      ],
+      "rules": ["Theme/Product via lucky draw", "3 min performance", "Props allowed", "Slogan submission mandatory"]
+    },
+    {
+      "id": "kurukshetra",
+      "name": "Kurukshetra",
+      "tagline": "Solo Challenge",
+      "schedule": ["Day 2"],
+      "dates": ["07/02/26"],
+      "category": "Cultural",
+      "participation": "Solo",
+      "fee": "₹100",
+      "coordinators": [
+        { "name": "Pranjal Shetty", "contact": "8999650884" },
+        { "name": "Nishtha Ahlawat", "contact": "8529499187" },
+        { "name": "Aishwarya Joshi", "contact": "9767794721" }
+      ],
+      "rules": ["3 Rounds", "Surprise tasks", "Judges speed & courage", "Separate winners for Boy/Girl"]
+    },
+    {
+      "id": "paigam",
+      "name": "Paigam",
+      "tagline": "Street Play",
+      "schedule": ["Day 2"],
+      "dates": ["07/02/26"],
+      "category": "Cultural",
+      "participation": "Team (Max 20)",
+      "fee": "₹300",
+      "coordinators": [
+        { "name": "Shivraj Jadhav", "contact": "9890730371" },
+        { "name": "Lakhan khatri", "contact": "9138601211" }
+      ],
+      "rules": ["10-12 mins duration", "No electrical gadgets", "Open air performance", "No vulgarity"]
+    },
+    {
+      "id": "sur-sartaj",
+      "name": "Sur Sartaj",
+      "tagline": "Singing",
+      "schedule": ["Day 2"],
+      "dates": ["07/02/26"],
+      "category": "Cultural",
+      "participation": "Solo/Duo/Group",
+      "fee": "₹100 (Solo) / ₹300 (Group)",
+      "coordinators": [
+        { "name": "Rohan", "contact": "9552959781" },
+        { "name": "Kirti", "contact": "9371969470" }
+      ],
+      "rules": ["Theme: Legends of Indian Cinema", "3-4 mins duration", "Karaoke allowed (music only)", "No pre-recorded vocals"]
+    },
+    {
+      "id": "sync-spark",
+      "name": "Sync & Spark",
+      "tagline": "Group Dance",
+      "schedule": ["Day 2", "Day 3"],
+      "dates": ["07/02/26", "08/02/26"],
+      "category": "Cultural",
+      "participation": "Team (10-12 members)",
+      "fee": "₹300",
+      "coordinators": [
+        { "name": "Gursheen", "contact": "9103015933" },
+        { "name": "Sanskriti", "contact": "8623934467" }
+      ],
+      "rules": ["Theme: Hollywood Movies", "12-15 mins duration", "Bring own music", "Report 30 mins prior"]
+    },
+    {
+      "id": "beat-battle",
+      "name": "Beat Battle",
+      "tagline": "Dance Battle",
+      "schedule": ["Day 2", "Day 3"],
+      "dates": ["07/02/26", "08/02/26"],
+      "category": "Cultural",
+      "participation": "Group (3-15)",
+      "fee": "₹300",
+      "coordinators": [
+        { "name": "Devika Sutar", "contact": "7773912349" },
+        { "name": "Kedar Mishra", "contact": "9611536196" }
+      ],
+      "rules": ["7 mins duration", "All dance forms allowed", "Submit song 7 days prior"]
+    },
+    {
+      "id": "vogue-e-virasat",
+      "name": "Vogue-e-Virasat",
+      "tagline": "Fashion Show",
+      "schedule": ["Day 3"],
+      "dates": ["08/02/26"],
+      "category": "Cultural",
+      "participation": "Team",
+      "fee": "₹300",
+      "coordinators": [
+        { "name": "Sumit", "contact": "9689052595" },
+        { "name": "Gursheen", "contact": "9103015933" }
+      ],
+      "rules": ["Theme: Hollywood Movies", "12-15 mins", "Vulgarity prohibited", "Own costumes required"]
+    }
+  ]
+}
