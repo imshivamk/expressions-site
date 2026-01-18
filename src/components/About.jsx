@@ -2,6 +2,11 @@ import React from 'react';
 // 1. Import Swiper React components and required modules
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+import img1 from "../assets/photos/img1.jpeg";
+import img2 from "../assets/photos/img2.jpeg";
+import img3 from "../assets/photos/img3.jpeg";
+import img4 from "../assets/photos/img4.jpeg";
+
 
 // 2. Import Swiper styles (these are necessary for it to work)
 import 'swiper/css';
@@ -19,7 +24,7 @@ const paginationStyles = `
 
 const About = () => {
   // Placeholder data for carousel images
-  const carouselImages = [1, 2, 3, 4, 5];
+  const carouselImages = [img4, img2, img3, img1];
 
   return (
     <section id="about" className="py-16 md:py-24 bg-white overflow-hidden">
@@ -67,18 +72,25 @@ const About = () => {
                 pagination={{ clickable: true, dynamicBullets: true }}
                 className="h-full w-full"
               >
-                {carouselImages.map((imgNum) => (
-                  <SwiperSlide key={imgNum}>
-                    {/* Red div placeholder for carousel image */}
-                    <div className="w-full h-full bg-gradient-to-br from-red-500 to-red-700 flex flex-col items-center justify-center relative">
-                        {/* Texture overlay */}
-                        <div className="absolute inset-0 bg-black/10 mix-blend-overlay"></div>
-                        <span className="text-white text-6xl mb-4 opacity-50">📸</span>
-                        <span className="text-white text-2xl font-bold tracking-wider">Highlights {imgNum}</span>
-                        <span className="text-white/70 text-sm mt-2 uppercase">Previous Year Memories</span>
-                    </div>
-                  </SwiperSlide>
-                ))}
+                {carouselImages.map((image, index) => (
+      <SwiperSlide key={index}>
+        <div className="w-full h-full relative">
+          {/* 2. Render the actual image */}
+          <img 
+            src={image} 
+            alt={`Highlight ${index + 1}`} 
+            className="w-full h-full object-cover"
+          />
+          
+          {/* Optional: Keep your overlay if you want text on top of the image */}
+          <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center">
+            <span className="text-white text-2xl font-bold tracking-wider">
+                  
+            </span>
+          </div>
+        </div>
+      </SwiperSlide>
+    ))}
               </Swiper>
             </div>
           </div>

@@ -34,7 +34,7 @@ const Navbar = () => {
           </div> */}
 
           {/* Hamburger Button */}
-          <div className="flex items-center md:hidden">
+          {/* <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-indigo-600 focus:outline-none"
@@ -47,8 +47,9 @@ const Navbar = () => {
                 )}
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
+
       </div>
 
       {/* Mobile Menu */}
