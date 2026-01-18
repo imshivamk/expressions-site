@@ -6,7 +6,6 @@ import img1 from "../assets/photos/img1.jpeg";
 import img2 from "../assets/photos/img2.jpeg";
 import img3 from "../assets/photos/img3.jpeg";
 import img4 from "../assets/photos/img4.jpeg";
-import xicon from "../assets/x.svg";
 import logo from "../assets/logo.jpeg"
 // 2. Import Swiper styles (these are necessary for it to work)
 import 'swiper/css';
@@ -63,9 +62,10 @@ const About = () => {
                href="https://www.linkedin.com/school/bharatividyapeeth">
                   <Linkedin size={44} />
               </a>
-               <a className='rounded-full p-2 bg-white hover:bg-gray-500/40 ' 
+               <a className='rounded-full p-2 bg-white text-black hover:bg-gray-500/40 ' 
                href="https://twitter.com/bharati_vp?lang=en">
-                  <img src={xicon} height={44} width={44} alt="" />
+                  <TwitterIcon size={44} />
+                  
               </a>
                <a className='rounded-full text-red-600 p-2 bg-white hover:bg-gray-500/40 ' 
                href="https://www.youtube.com/user/bharatividyapeethuni">
