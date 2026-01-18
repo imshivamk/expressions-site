@@ -7,7 +7,7 @@ import img2 from "../assets/photos/img2.jpeg";
 import img3 from "../assets/photos/img3.jpeg";
 import img4 from "../assets/photos/img4.jpeg";
 import xicon from "../assets/x.svg";
-
+import logo from "../assets/logo.jpeg"
 // 2. Import Swiper styles (these are necessary for it to work)
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -25,7 +25,7 @@ const paginationStyles = `
 
 const About = () => {
   // Placeholder data for carousel images
-  const carouselImages = [img4, img2, img3, img1];
+  const carouselImages = [logo, img4, img2, img3, img1];
 
   return (
     <section id="about" className="py-16 md:py-24 bg-white overflow-hidden">
@@ -96,7 +96,7 @@ const About = () => {
                 fadeEffect={{ crossFade: true }}
                 loop={true}
                 autoplay={{
-                  delay: 3500,
+                  delay: 4000,
                   disableOnInteraction: false,
                 }}
                 pagination={{ clickable: true, dynamicBullets: true }}
