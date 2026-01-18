@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative 
+      className="relative mt-10
       flex flex-col items-center max-lg:justify-center gap-10
       pt-6 pb-12 md:pt-32 md:pb-20
       w-full bg-cover bg-center bg-no-repeat
@@ -24,13 +24,13 @@ const Hero = () => {
 
       {/* Abstract Shapes */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
-        <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-500 rounded-ful l mix-blend-multiply filter blur-3xl animate-blob"></div>
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <h1 className="text-4xl font-bold md:text-6xl font-extrabold tracking-tight mb-4">
-          <span className="text-8xl">X</span>PRESSIONS <span className="text-blue-500">2026</span>
+        <h1 className="text-5xl font-bold md:text-6xl font-extrabold tracking-tight mb-4">
+          <span className="text-9xl">X</span>PRESSIONS <span className="text-blue-500">2026</span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl 
         text-indigo-100 mb-8 font-semibold">
