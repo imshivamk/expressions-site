@@ -10,14 +10,14 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <div className="w-52 h-full 0 rounded flex items-center justify-center text-white text-xs font-bold">
-              <img src="src/assets/bvdu.webp" alt="" />
+              <img src="./bvdu.webp" alt="" />
             </div>
           </div>
 
 
           <div className="flex-shrink-0 flex items-center">
             <div className="w-28 h-full 0 rounded flex items-center justify-center text-white text-xs font-bold">
-              <img src="src/assets/imed_logo.jpg" alt="" />
+              <img src="./imed_logo.jpg" alt="" />
             </div>
           </div>
 
