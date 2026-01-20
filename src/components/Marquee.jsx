@@ -7,14 +7,16 @@ const Marquee = () => {
       direction="left"
       scrollamount="10"
       className="bg-violet-900/40
-      rounded-3xl mx-4 max-w-lg
+      rounded-3xl mx-4 max-w-lg p-1
       "
     >
       <a
         href="https://www.bvuniversity.edu.in/imed/"
         target="_blank"
         rel="noopener noreferrer"
-        className="mr-[50px] text-white no-underline"
+        className="mr-[50px] text-white no-underline
+        text-lg font-bold 
+        "
         
         onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
         onMouseOut={(e) => (e.target.style.textDecoration = "none")}
