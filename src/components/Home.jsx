@@ -5,6 +5,7 @@ import Events from './Events'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { FacebookIcon, Instagram, Linkedin, Twitter, YoutubeIcon } from 'lucide-react'
+import Marquee from './Marquee'
 
 const Home = () => {
   return (

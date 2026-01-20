@@ -7,9 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-around grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-1 flex flex-col items-center justify-center">
-            <h4 className="text-white font-bold text-lg mb-4">
-              About EXPRESSIONS
-            </h4>
+            
             <p className=" text-center text-lg leading-relaxed text-slate-400">
               Venue: BVDU IMED, More Vidyalaya Campus, Erandwane, Kothrud, Pune<br></br>
               For Queries,Contact-Aarya: +91 98229 28192,Prince: +91 82953 82085<br></br>

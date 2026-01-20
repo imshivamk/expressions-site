@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import myImage from "../assets/logo.jpeg";
+import Marquee from "./Marquee";
+import img1 from "../assets/xpressionsIg.png";
+import { Instagram } from "lucide-react";
 
 const Hero = () => {
   const [date, setDate] = useState(new Date(1770458400000 - Date.now()));
@@ -45,8 +48,8 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
           <button
             onClick={() =>
-              (window.location.href =
-                "https://docs.google.com/forms/d/e/1FAIpQLSddnW3rdwo-u4u7LIf5i_jAu3dQbBRH76M6Q1RDuor_2Mj4AA/viewform?pli=1")
+            (window.location.href =
+              "https://docs.google.com/forms/d/e/1FAIpQLSddnW3rdwo-u4u7LIf5i_jAu3dQbBRH76M6Q1RDuor_2Mj4AA/viewform?pli=1")
             }
             className="bg-white text-indigo-900 font-bold py-3 px-8 rounded-full shadow-lg transform transition hover:scale-105 hover:shadow-xl"
           >
@@ -54,21 +57,30 @@ const Hero = () => {
           </button>
           <button
             onClick={() =>
-              (window.location.href =
-                "https://qr.scan.page/uploads/pdf/eWNjz9_34eaacca47800a3a.pdf")
+            (window.location.href =
+              "https://qr.scan.page/uploads/pdf/eWNjz9_34eaacca47800a3a.pdf")
             }
             className="border-2 border-white/30 bg-violet-500/40 backdrop-blur-sm text-white font-semibold py-3 px-8 rounded-full hover:bg-white/10 transition"
           >
             View Rulebook
           </button>
+
           <button
             onClick={() =>
-              (window.location.href = "https://www.bvuniversity.edu.in/imed/")
+            (window.location.href =
+              "https://www.instagram.com/xpressions_2026")
             }
-            className="border-2 border-white/30 bg-purple-600/40 backdrop-blur-sm text-white font-semibold py-3 px-8 rounded-full
-               hover:bg-white/10 transition"
+            className="
+              border-2 border-white/30
+              bg-purple-600/40 backdrop-blur-sm
+              rounded-full
+              p-2
+              hover:bg-white/10
+              transition
+              flex items-center justify-center
+              "
           >
-            Visit our offical website
+              <Instagram/>  <p className="px-1">xpressions_2026</p>
           </button>
 
           <div className=""></div>
@@ -93,6 +105,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <Marquee />
     </section>
   );
 };

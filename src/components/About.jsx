@@ -37,7 +37,7 @@ const About = () => {
   const carouselImages = [logo, img4, img2, img3, img1];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-white overflow-hidden">
+    <section id="about" className="py-4 md:py-24 bg-white overflow-hidden">
       {/* Inject custom styles for Swiper dots */}
       <style>{paginationStyles}</style>
 
