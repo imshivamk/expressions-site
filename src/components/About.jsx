@@ -65,33 +65,10 @@ const About = () => {
               promises a weekend that defies expectations.
             </p>
 
-            <button className="bg-indigo-50 text-indigo-700 font-semibold py-3 px-8 rounded-xl hover:bg-indigo-100 transition-colors duration-300 flex items-center gap-2 group">
-              Learn More About Us
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </button>
+            
           </div>
 
-          <div className="flex gap-4 font-sans bg-indigo-50 text-purple-500 font-semibold py-3 px-8 rounded-xl hover:bg-indigo-100 transition-colors duration-300 flex items-center gap-2 group">
-            <a
-              href="https://www.bvuniversity.edu.in/imed/"
-              className="text-md hover:text-violet-800 cursor-pointer font-semibold text-black"
-            >
-              To Visit our official website <span className="text-blue-700">Click Here</span>
-            </a>
-          </div>
+          
 
           {/* Right Column: Image Carousel */}
           <div className="order-1 lg:order-2 relative z-10">
