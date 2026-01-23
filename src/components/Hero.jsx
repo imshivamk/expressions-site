@@ -5,13 +5,37 @@ import img1 from "../assets/xpressionsIg.png";
 import { Instagram } from "lucide-react";
 
 const Hero = () => {
-  const [date, setDate] = useState(new Date(1770458400000 - Date.now()));
+  const TARGET_TIME = 1770458400000;
+  const [date, setDate] = useState(TARGET_TIME - Date.now());
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDate(new Date(1770458400000 - Date.now()));
-    }, 1000);
+    const intervalId = setInterval(()=>{
+      const remainingTime = TARGET_TIME - Date.now();
+      setDate(remainingTime);
+    },1000);
+
+    return () => clearInterval(intervalId);
   }, []);
+
+  const formatTime = (timeInMs) => {
+    if (timeInMs < 0) return "Expired";
+
+    const totalSeconds = Math.floor(timeInMs / 1000);
+    const totalMinutes = Math.floor(totalSeconds / 60);
+    const totalHours = Math.floor(totalMinutes / 60);
+
+    const days = Number(Math.floor(totalHours / 24));
+    const seconds = totalSeconds % 60;
+    const minutes = totalMinutes % 60;
+    const hours = totalHours % 24;
+
+    return {
+      days,
+      hours,
+      minutes,
+      seconds,
+    };
+  };
 
   return (
     <section
@@ -85,19 +109,19 @@ const Hero = () => {
 
         <div className="grid grid-cols-4 gap-2 max-w-lg mx-auto border border-white/10 bg-gray-900/30 backdrop-blur-sm rounded-xl p-4">
           <div className="flex flex-col justify-center items-center">
-            <span className="text-2xl">{date.getDate()}</span>
+            <span className="text-2xl">{formatTime(date).days}</span>
             <span className="font-semibold text-xl">Days</span>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <span className="text-2xl">{date.getHours()}</span>
+            <span className="text-2xl">{formatTime(date).hours}</span>
             <span className="font-semibold text-xl">Hours</span>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <span className="text-2xl">{date.getMinutes()}</span>
+            <span className="text-2xl">{formatTime(date).minutes}</span>
             <span className="font-semibold text-xl">Minutes</span>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <span className="text-2xl">{date.getSeconds()}</span>
+            <span className="text-2xl">{formatTime(date).seconds}</span>
             <span className="font-semibold text-xl">Seconds</span>
           </div>
         </div>
